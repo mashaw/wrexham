@@ -71,7 +71,7 @@ body {
 		background-attachment: fixed;
 		background-color: #ebebeb;
 	}
-	
+
 	@media (min-width: 1180px) {
 		.shadow-box {
 			background-size: cover;
@@ -94,7 +94,7 @@ body {
 	.main-container {
 		background-size: 100% 28px;
 	}
-	
+
 }
 
 a:not(.btn):not(.btn-primary):not(.btn-sm) {
@@ -132,7 +132,7 @@ h1 {@include headType; }
 h2,
 h3,
 h4   {
-@include subheadType; 
+@include subheadType;
 }
 
 h5,
@@ -537,11 +537,11 @@ hr {
 		width:280px;
 	}
 
-	
+
 	.navbar-collapse.collapse {
 		display: block!important;
 	}
-	
+
 
 
 }
@@ -604,7 +604,7 @@ hr {
 			&:not(.first) {border-top:none;
 				border-left: 1px solid $gold;
 			}
-			
+
 			a {padding: 5px 10px;}
 			&.first a {
 				padding-left: 0;
@@ -612,9 +612,9 @@ hr {
 			&.last a {
 				padding-right: 0;
 			}
-			
+
 			a {}
-			
+
 		}
 	}
 }
@@ -1080,8 +1080,6 @@ span.geofield-proximity-origin-from,
 
 
 .form-control.form-checkboxes {
-	//padding: 0;
-	//border: none
 }
 
 input[type="checkbox"] {
@@ -1118,8 +1116,6 @@ input[type="checkbox"] {
 	}
 	.node-location .map_and_images {
 		float: none;
-		//clear: both;
-		//width: 100%;
 			float: right;
 		width: 48.5%;
 		margin-top: 15px;
@@ -1271,10 +1267,7 @@ input[type="checkbox"] {
 		color: $black;
 		font-weight: 700;
 	}
-	//.embedded-video .player {
-		//@include video;
-	//}
-	
+
 }
 
 
