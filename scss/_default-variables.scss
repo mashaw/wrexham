@@ -1,0 +1,144 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+//$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+
+//Alegreya+Sans+SC:400,500,700
+//Alegreya+Sans:300i,400,400
+
+
+
+@mixin headType {
+	font-family: 'Quintessential', cursive;
+	font-weight: normal;
+}
+
+@mixin subheadType {
+	font-family: 'Alegreya Sans SC', sans-serif;font-weight:400;
+}
+
+@mixin bodyType {
+	font-family: 'Alegreya Sans', sans-serif;font-weight:400
+}
+
+@mixin bodyTypeBold {
+	font-family: 'Alegreya Sans', sans-serif;font-weight:700
+}
+
+
+$black: #333333;
+$gold: #b28f56;
+$grey: #c1c1c1;
+$darkgrey: #5d5d5d;
+$blackGold: darken($gold, 20%);
+
+@font-face {
+  font-family: 'wrexham_icons';
+  src: url('fonts/wrexham_icons.eot?22100600');
+  src: url('fonts/wrexham_icons.eot?22100600#iefix') format('embedded-opentype'),
+       url('fonts/wrexham_icons.woff2?22100600') format('woff2'),
+       url('fonts/wrexham_icons.woff?22100600') format('woff'),
+       url('fonts/wrexham_icons.ttf?22100600') format('truetype'),
+       url('fonts/wrexham_icons.svg?22100600#wrexham_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'wrexham_icons';
+    src: url('../font/wrexham_icons.svg?22100600#wrexham_icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "wrexham_icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-youtube:before { content: '\f167'; } /* '' */
+.icon-vimeo:before { content: '\f27d'; } /* '' */
+
+
+@mixin icon-font($content) {
+    font-family: "wrexham_icons";
+	   content: $content;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin: 0 .25em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin video  {
+		float: none;
+		clear: both;
+		margin: 0;
+		position: relative;
+		padding-bottom: 56.25%;
+		/* 16:9 */
+		padding-top: 0;
+		height: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
